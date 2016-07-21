@@ -14,10 +14,10 @@
 
 <body>
     <div class="container col-md-12 col-sm-12 col-xs-12 first_page">
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0;">
 
 <!-- -----------------nav bar-------------------------------------- -->
-            <!-- <div class="col-md-12 col-sm-12 col-xs-12"> -->
+           	<div class="col-md-12 col-sm-12 col-xs-12 home_nav">
                 <div class="col-md-8 col-sm-8"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="navbar-header">
@@ -31,15 +31,64 @@
                         <ul class="nav navbar-nav raleway_regular tregular">
                             <li><a href="#about"><span class="menu_homepage ">ABOUT</span></a></li>
                             <li><a href="#subscription"><span class="menu_homepage">SUBSCRIPTION</span></a></li>
-                            <li><a href="#k"><span class="menu_homepage">CONTACT</span></a></li>
-                            <!-- <li><a href="#k"><span class="menu_homepage" data-toggle="modal" data-target="#myModal" >CONTACT</span></a></li> -->
+                            <li><a href="#contact"><span class="menu_homepage">CONTACT</span></a></li>
+                           
                         </ul>
                     </div>
                 </div>
-            <!-- </div> -->
+                </div>
+                   <img src="images/images1.png" class="center-block frst_page_logo">
+                 <div class="content">
+              <div id="player"></div>
+              </div>
+             
+                  <script type="text/javascript">
+                        var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            <img src="images/images1.png" class="center-block frst_page_logo">
-            <img src="images/images2.png" class="center-block frst_page_play">
+var player;
+
+onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('player', {
+        height: '570px',
+        width: '100%',
+        videoId: 'J4rBDsimsmQ',  
+        playerVars: {
+            'autoplay': 0,
+            'rel': 0,
+            'showinfo': 0,
+            'modestbranding': 1,
+            'autohide': 2,
+            'border':0,
+           
+            'enablejsapi':1,
+            'controls':2
+
+            
+
+        },
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+onPlayerStateChange = function (event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        $('.secnd_pag_utub').fadeIn('normal');
+    }
+}
+
+$(document).on('click', '.secnd_pag_utub', function () {
+    $(this).fadeOut('normal');
+    player.playVideo();
+});
+                    </script>
+                  
+
+            <!-- <img src="images/images2.png" class="center-block frst_page_play"> -->
 
 
         </div>
@@ -52,23 +101,26 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="col-md-1 col-sm-1"></div>
         <div class="col-md-2 col-sm-2 col-xs-12">
-        <img src="images/images3.png" class="center-block">
+        <!-- <img src="images/images3.png" class="center-block"> -->
+          <a href="#"><img src="images/icons_1.png" onmouseover="this.src='images/icons_1_hover.png'" onmouseout="this.src='images/icons_1.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class for Schools</p>
-        <img src="images/images33.png" class="center-block">
+        <img src="images/images33.png" class="center-block images33_m">
 
         </div>
          <div class="col-md-2 col-sm-2"></div>
-          <div class="col-md-2 col-sm-2 col-xs-12">
-        <img src="images/images4.png" class="center-block">
+          <div class="col-md-2 col-sm-2 col-xs-12 scnd_pag_img_ma">
+        <!-- <img src="images/images4.png" class="center-block"> -->
+          <a href="#"><img src="images/icons_2.png" onmouseover="this.src='images/icons_2_hover.png'" onmouseout="this.src='images/icons_2.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class with Tablet</p>
-        <img src="images/images33.png" class="center-block">
+        <img src="images/images33.png" class="center-block images33_m">
 
         </div>
         <div class="col-md-1 col-sm-1"></div>
-         <div class="col-md-3 col-sm-3 col-xs-12">
-        <img src="images/images5.png" class="center-block">
+         <div class="col-md-3 col-sm-3 col-xs-12 scnd_pag_img_ma_1">
+        <!-- <img src="images/images5.png" class="center-block"> -->
+          <a href="#"><img src="images/icons_3.png" onmouseover="this.src='images/icons_3_hover.png'" onmouseout="this.src='images/icons_3.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class for personal subscriptions</p>
-        <img src="images/images33.png" class="center-block">
+        <img src="images/images33.png" class="center-block images33_m">
 
         </div>
          <div class="col-md-1 col-sm-1"></div>
@@ -376,23 +428,92 @@ tablets</p>
 <p class="eighth_page_head text-center" id="subscription">Subscription</p>
 <p class="text-center fourth_page_inner_img">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
 <div class="col-md-12 col-sm-12 col-xs-12">
-<div class="col-md-1 col-sm-1"></div>
-<div class="col-md-10 col-sm-10 col-xs-12 eighth_page_box">
-<div class="col-md-12 col-sm-12 col-xs-12">
-<div class="col-md-4 col-sm-4 col-xs-12">
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="col-md-2 col-sm-2"></div>
+<div class="col-md-8 col-sm-8 col-xs-12 eighth_page_box">
 <p class="text-center subscription_price">Price Calculator</p>
+<div class="col-md-12 col-sm-12 col-xs-12 eighth_page_box_frst_para">
+<div class="col-md-4 col-sm-4 col-xs-12">
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 center-block">
+
+
+    <form role="form">
+                                <div class="product_chchkbox1">
+                                    <input type="checkbox" id="checkbox01" name="checkbox" />
+                                   <label for="checkbox01"><span></span></label>
+                                   <p class="subscription_srvr eighth_page_box_frst_para_inner">Server</p>
+                                      <p class="subscription_smal_box_cont tbold eighth_page_box_frst_para_inner">  <input type="number" name="" value="1" style="width:25%;" min="1"> * 16,000</p>
+                                </div>
+                                <div class="product_chchkbox2">
+                                    <input type="checkbox" id="checkbox02" name="checkbox" />
+                                    <label for="checkbox02"><span></span></label>
+                                     <p class="subscription_srvr eighth_page_box_frst_para_inner">Server & Projecter</p>
+                                <!--    <p class="subscription_smal_box_cont tbold eighth_page_box_frst_para_inner"><span class="subscription_smal_box">01</span> * 16,000</p> -->
+
+                                    <p class="subscription_smal_box_cont tbold eighth_page_box_frst_para_inner">  <input type="number" name="" style="width:25%;" value="1" min="1"> * 16,000</p>
+                                </div>
+                            </form>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12"></div>
+ 
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 eighth_page_box_frst_para">
+<div class="col-md-4 col-sm-4 col-xs-12">
+<p class="subscription_srvr">Course Content</p>
+                                   <!-- <p class="subscription_smal_box_cont tbold"><span class="subscription_smal_box">01</span> -->
+                                 <p class="subscription_smal_box_cont tbold">  <input type="number" name="" style="width:25%;" value="1" min="1"> * 16,000</p>
 
 </div>
 <div class="col-md-4 col-sm-4 col-xs-12">
+ <div class="product_chchkbox3">
+                                    <input type="checkbox" id="checkbox03" name="checkbox" />
+                                    <label for="checkbox03"><span class="input_chckbox_3"></span></label>
+                                 <!--     <p class="subscription_srvr">Server & Projecter</p>
+                                   <p class="subscription_smal_box_cont tbold"><span class="subscription_smal_box">01</span> * 16,000</p> -->
+                                </div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+<p class="subscription_srvr ">Total Cost</p>
+                                  <!--  <p class="subscription_smal_box_cont tbold"><span class="subscription_smal_box">01</span> * 16,000</p> -->
+                                  <input type="text" name="name" style="width:50%;">
+</div>
+
 
 
 </div>
-</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 eighth_page_box_frst_para">
+<div class="col-md-4 col-sm-4 col-xs-12">
 
 </div>
-<div class="col-md-1 col-sm-1"></div>
+
+<div class="col-md-4 col-sm-4 col-xs-12">
+<p class="subscription_srvr eighth_page_box_frst_para_inner">Tablet</p>
+                                     <p class="subscription_smal_box_cont tbold eighth_page_box_frst_para_inner">  <input type="number" name="" style="width:25%;" value="1" min="1"> * 16,000</p>
+
+                                   <div class="product_chchkbox4">
+                                    <input type="checkbox" id="checkbox04" name="checkbox" />
+                                    <label for="checkbox04"><span></span></label>
+                                     <p class="subscription_srvr eighth_page_box_frst_para_inner">Complete Setup</p>
+                                     <p class="eighth_page_box_frst_para_inner tsemibolditalic homepage_innr_in">(Including interior designing)</p>
+                                     <p class="subscription_smal_box_cont tbold eighth_page_box_frst_para_inner">  <input type="number" name="" style="width:25%;" value="1" min="1"> * 16,000</p>
+                                </div>
+</div>
+
+<div class="col-md-4 col-sm-4 col-xs-12">
+
+</div>
+
+
+</div>
+
+<div class="subscription_button_main col-md-12 col-sm-12 col-xs-12">
+
+<p class="text-center subscribe_button_content tlit">SUBSCRIBE</p>
+
+</div>
+</div>
+<div class="col-md-2 col-sm-2"></div>
 
 
 </div>
@@ -404,6 +525,8 @@ tablets</p>
 
 
 </div>
+
+
 </div>
 <!-- ------------------------contact page----------------------- -->
 
@@ -411,7 +534,7 @@ tablets</p>
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-8 col-sm-8 col-xs-12">
-<p class="text-center contact_page_headr">Contact us</p>
+<p class="text-center contact_page_headr" id="contact">Contact us</p>
 <div class="col-md-1 col-sm-1"></div>
 <div class="col-md-3 col-sm-3 col-xs-12">
 <img src="images/images31.png" class="center-block">
