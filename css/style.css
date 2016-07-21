@@ -1,0 +1,196 @@
+body{
+	color: white;
+}
+
+.first_page{
+	background: black;
+	min-height: 527px;
+	font-size: 14px;
+}
+img.frst_page_logo{
+	position: relative;
+	top: -3em;
+}
+img.frst_page_play{
+	padding-top: 6em;
+}
+
+p.second_page_head
+{
+	color:#535353;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background: transparent;
+	color: white;
+}
+a{
+	color: white;
+
+}
+
+.navbar-toggle{
+	border-color: white;
+}
+.navbar-toggle .icon-bar{
+	background:white;
+	color: white;
+}
+/*------------------------------second page-------------------------*/
+
+.second_page{
+	margin-top: 4em;
+}
+
+p.second_page_about{
+	font-size: 24px;
+	color:#535353;
+	margin-top: 2em;
+}
+p.second_page_about_inner{
+	color:#535353;
+	font-size: 14px;
+}
+.second_page_box{
+	border: 1px solid #ecebeb;
+	min-height: 516px;
+	margin-top: 2em;
+}
+
+p.second_page_box_content_head{
+	color:#535353;
+	font-size: 18px;
+	margin-top: 1.5em;
+}
+
+p.second_page_box_content_inner{
+	color:#535353;
+	font-size: 14px;
+	/* margin-top: 0em; */
+}
+
+
+/*------------------------------third page----------------------*/
+
+.third_page{
+	background-image: url(../images/1.jpg);
+	min-height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4em;
+}
+
+p.third_page_head{
+	font-size: 24px;
+}
+
+p.third_page_inner{
+	font-size: 14px;
+}
+.third_page_head_pad{
+	padding-top: 14%;
+}
+
+
+/*--------------------------------fourth page---------------------------------*/
+
+p.fourth_page_box_content_inner{
+	color:#535353;
+	font-size: 14px;
+	padding-top: 2em;
+}
+p.fourth_page_inner_img{
+	font-size: 14px;
+	color:#535353;
+}
+
+
+/*--------------------------fifth page----------------------------*/
+
+.fifth_page{
+	background-image: url(../images/2.jpg);
+	min-height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4em;
+}
+
+/*-------------------------seventh page--------------------*/
+
+.seventh_page{
+	background-image: url(../images/3.jpg);
+	min-height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4em;
+}
+
+p.eighth_page_head{
+	font-size: 24px;
+	color:#535353;
+	margin-top: 2em;
+}
+
+.eighth_page_box{
+	border:1px solid black;
+	min-height: 614px;
+	margin-top: 2em;
+	background-i
+}
+
+p.images_margin{
+	    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+p.subscription_price{
+	font-size: 18px;
+	color: #636363;
+	margin-top: 2em;
+
+}
+
+/*--------------------------------contact page-------------------------*/
+
+.contact_page{
+	background: black;
+	margin-top: 2.5em;
+}
+
+p.contact_page_headr
+{
+	color: #636363;
+	font-size: 24px;
+	margin-top: 1em;
+}
+
+p.contact_page_numbr{
+	font-size: 36px;
+	margin-left: -1em;
+	margin-top: .5em;
+}
+
+a:hover,a:focus{
+	color: white;
+	text-decoration: none;
+}
+p.contact_page_last{
+	margin-top: 3em;
+	color: #636363;
+	font-size: 14px;
+}
+
+.attrc_link a{
+	color:#22aae2;
+}
+
+span.contact_inner3{
+	color:#22aae2;
+}
+.contact_page_adres{
+	margin-top: 2em;
+}
+
+.technical_spc{
+	margin-bottom: 1em;
+}
