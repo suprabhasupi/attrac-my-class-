@@ -53,3 +53,29 @@
     font-family:tlit;
 }
 
+
+@font-face {
+        font-family:tsemibold;
+        src: url(font/tfont/TitilliumWeb-SemiBold.ttf);
+}
+.tsemibold{
+    font-family:tsemibold;
+}
+
+@font-face {
+        font-family:algreg;
+        src: url(font/Alegreya-Regular.otf);
+}
+.algreg{
+    font-family:algreg;
+}
+
+
+@font-face {
+        font-family:algbold;
+        src: url(font/Alegreya-Bold.otf);
+}
+.algbold{
+    font-family:algbold;
+}
+

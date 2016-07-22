@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="image/image2.png" type="image/gif" sizes="16x16"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/new_css.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container col-md-12 col-sm-12 col-xs-12 login_page">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<img src="images/images1.png" class="center-block login_logo">
+<div class="col-md-3 col-sm-3"></div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="login_box">
+<table class="tregular">
+	<tr>
+
+	<td class="login_tr">E-mail/Roll Number</td>
+	<td><input type="email" name="email" class="email_input" required>
+	</tr>
+
+	<tr>
+	<td class="login_tr new_tr_login ">Password</td>
+	<td class="new_tr_login"><input type="password" name="password" class="paswrd_input" required>
+	</tr>
+</table>
+<p class="frgt_psrd_login tregular"><a href="" class="frgt_psrd_link_login">Forgot Password</a></p>
+   <button type="button" class="btn btn-default sub_bthbtm pull-right">LOGIN</button>
+ <button type="button" class="btn btn-default cn_bt sub_cnbt pull-right">CANCEL</button>
+
+</div>
+</div>
+<div class="col-md-3 col-sm-3"></div>
+
+
+</div>
+</div>
+<script>
+$(document).ready(function(){
+ $(".email_input").click(function(){
+ 	$(this).css("border-bottom", "3px solid #22aae2");
+ 	$('.paswrd_input').css("border-bottom", "1px solid #aeaeae");
+});
+
+ $(".paswrd_input").click(function(){
+ 	$(this).css("border-bottom", "3px solid #22aae2");
+ 	$('.email_input').css("border-bottom", "1px solid #aeaeae");
+});
+});
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="video1">
+<video class="video" style="width:50%;"><source src="vido.mp4"></video>
+<div class="overlay">
+<img src="images/images2.png" class="play">
+<p>sdadsada</p>
+</div>
+</div>
+
+<div class="video2">
+<video class="video" style="width:50%;"><source src="vido.mp4"></video>
+<div class="overlay">
+<img src="images/images2.png" class="play">
+<p>sdadsada</p>
+</div>
+</div>
+
+<script type="text/javascript">
+	$('.video').click(function(){
+		this.pause();
+		$(this).next().show();
+		console.log("video",this);
+	});
+	$('.play').click(function(){
+		$(this).parent().hide();
+		var vid = $(this).parent().prev()[0];
+		// this.paused?this.play():this.pause();
+			vid.paused?vid.play():vid.pause();
+			// $(this).parent().prev()[0].pause();
+			console.log($(this).parent().prev());
+		
+	})
+
+
+	
+</script>
+
+</body>
+</html>
+
+
+<style type="text/css">
+.overlay{
+	    position: absolute;
+    top: 0;
+    color: white;
+    width: 50%;
+    height:100%;
+    background: rgba(16, 16, 16, 0.21);
+}
+
+.video1,.video2{
+position: relative;
+}
+</style>

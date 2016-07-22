@@ -6,8 +6,9 @@ body{
 	position: absolute;
 }
 .first_page{
-	/*background: black;*/
-	/*min-height: 527px;*/
+	background: black;
+	max-height: 527px;
+	min-height: 527px;
 	font-size: 14px;
 	padding:0;
 }
