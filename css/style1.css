@@ -37,7 +37,7 @@ input[type="email"]{
     font-family: tsemibold;
     border-radius: 4px;
     font-size: 15px;
-    width: 17em;
+    width: 22.9em;
 }
 
 input[type="password"]{
@@ -52,7 +52,7 @@ input[type="password"]{
     font-size: 15px;
         font-family: tsemibold;
             border-radius: 4px;
-            width: 17em;
+             width: 22.9em;
 }
 
 td.login_tr{
@@ -191,7 +191,15 @@ img.search_topic{
     height:98%;
     background: rgba(16, 16, 16, 0.47);
 }
-
+.overlay_time{
+	 position: absolute;
+    top: 0;
+    color: white;
+    width: 25%;
+    height:100%;
+    background: transparent;
+    left: 75%;
+}
 .overlay1{
 	    position: absolute;
     top: 0;
@@ -201,6 +209,13 @@ img.search_topic{
     background: rgba(16, 16, 16, 0.47);
 }
 
+
+p.second_overly{
+	    position: relative;
+    top: 85.5%;
+    float: right;
+    margin-right: 16px;
+}
 .video1,.video2,.video3,.video4,.video5,.video6,.video7,.video8,.video9{
 position: relative;
     margin: 2em 0;
@@ -213,56 +228,76 @@ position: relative;
 }
 
 img.play_button_main_overlay{
-	padding-top: 13%;
+	padding-top: 12%;
 }
 
 .frst_video_hdr{
 	font-size: 18px;
 	border-bottom: 1px solid #22aae2;
 	width: 22%;
-	margin-left: 1em;
+	margin-left: 16px;
+	padding-bottom: 7px;
+	margin-top: 16px;
+	letter-spacing: 0px;
+	line-height: 16px;
 }
 
 p.frst_video_inner{
 	font-size: 14px;
-		padding-left: 1em;
+	padding-left: 1em;
+	/* line-height: 16px; */
+	line-height: 16px;
 }
 p.frst_video_inner_1{
 	font-size: 14px;
-		padding-left: 1em;
+	padding-left: 1em;
+	color: #c0bfbf;
+	line-height: 16px;
 }
 
 .frst_video_hdr1{
 	font-size: 18px;
 	border-bottom: 1px solid #22aae2;
-	width: 55%;
-		margin-left: 1em;
+	width: 61%;
+	padding-bottom: 7px;
+	margin-left: 1em;
+	margin-top: 10px;
+	line-height: 16px;
 }
 
 img.play_button_main_overlay1{
 	width: 13%;
 	margin-left: 1em;
-	margin-top:22%;	
+	margin-top: 24.5%;
 }
 
 p.video_timg{
 	    float: right;
-    margin-right: 1.5em;
-    margin-top: 18%;
+	    margin-right: 16px;
+	    margin-top: 21.5%;
 }
 
 
-
-
+.down_scnd_rit{
+	    margin-top: -2em;
+    position: relative;
+    /* left: 15px; */
+    padding-right: 0;
+}
+.down_scnd_left{
+	 margin-top: -2em;
+    position: relative;
+    padding-left: 0;
+}
 /*---------------------sub inner page------------------------*/
 
 .myclass_sub_inner_main{
 	    font-size: 14px;
 	    margin-left: 1em;
-	    border-bottom: 1px solid #22aae2;
-	    width: 9%;
+	    border-bottom: 1px solid #c8c8c8;
+	    width: 12.5%;
 	    margin-top: 1em;
-	    padding-bottom: 5px;
+	    padding-bottom: 3px;
 	    position: relative;
 	    top: 1em;
 }

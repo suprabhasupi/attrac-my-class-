@@ -10,6 +10,20 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
+<style type="text/css">
+	img.play_button_main_overlay{
+		padding-top: 17%;
+	}
+	img.play_button_main_overlay1{
+		margin-top: 25.5%;
+	}
+	p.video_timg{
+		    margin-top: 23%;
+	}
+	.frst_video_hdr{
+		width:15%;
+	}
+</style>
 <body>
 <div class="container col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-12 col-sm-12 col-xs-12 myclass_sub_frst">
@@ -99,15 +113,16 @@
 <p class="frst_video_inner">Explaining how to find volume of cuboid.</p>
 <p class="tsemibold frst_video_inner_1">Chapter 7,Class IX</p>
 <img src="images/login/play.png" class="play center-block play_button_main_overlay">
-<p class="video_timg">18:20</p>
-
-</div>
-</div>
+<p class="video_timg tsemibold">18:20</p>
 
 </div>
 
+</div>
 
-<div class="col-md-12 col-sm-12 col-xs-12">
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12" style="padding:0;">
 <div class="col-md-4 col-sm-4 col-xs-4">
 <div class="video2">
 <video controls class="video" style="width:100%;"><source src="vido.mp4"></video>
@@ -117,6 +132,10 @@
 <p class="tsemibold frst_video_inner_1">Chapter 7,Class IX</p>
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
+</div>
+
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
 </div>
 </div>
 
@@ -129,6 +148,9 @@
 <p class="tsemibold frst_video_inner_1">Chapter 7,Class IX</p>
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
+</div>
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
 </div>
 </div>
 </div>
@@ -143,6 +165,9 @@
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
 </div>
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
+</div>
 </div>
 
 <div class="video5">
@@ -153,6 +178,9 @@
 <p class="tsemibold frst_video_inner_1">Chapter 7,Class IX</p>
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
+</div>
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
 </div>
 </div>
 </div>
@@ -167,6 +195,9 @@
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
 </div>
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
+</div>
 </div>
 
 <div class="video7">
@@ -177,6 +208,9 @@
 <p class="tsemibold frst_video_inner_1">Chapter 7,Class IX</p>
 <img src="images/login/play.png" class="play play_button_main_overlay1">
 
+</div>
+<div class="overlay_time">
+<p class="tsemibold second_overly">18:27</p>
 </div>
 </div>
 
@@ -191,6 +225,7 @@
 		this.pause();
 		$(this).next().show();
 		console.log("video",this);
+
 	});
 	$('.play').click(function(){
 		$(this).parent().hide();
@@ -199,6 +234,7 @@
 			vid.paused?vid.play():vid.pause();
 			// $(this).parent().prev()[0].pause();
 			console.log($(this).parent().prev());
+			$(".overlay_time").hide();
 		
 	})
 
