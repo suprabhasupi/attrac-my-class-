@@ -7,9 +7,15 @@
     <!-- <link rel="icon" href="image/image2.png" type="image/gif" sizes="16x16"> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/new_css.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <script>
+              new WOW().init();
+     </script>
     
 </head>
 
@@ -30,71 +36,34 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav raleway_regular tregular">
-                            <li><a href="#about"><span class="menu_homepage ">ABOUT</span></a></li>
-                            <li><a href="#subscription"><span class="menu_homepage">SUBSCRIPTION</span></a></li>
-                            <li><a href="#contact"><span class="menu_homepage">CONTACT</span></a></li>
+                            <li><a data-scroll data-options='{ "easing": "linear" }' href="#about"><span class="menu_homepage ">ABOUT</span></a></li>
+                            <li><a data-scroll data-options='{ "easing": "linear" }' href="#subscription"><span class="menu_homepage">SUBSCRIPTION</span></a></li>
+                            <li><a data-scroll data-options='{ "easing": "linear" }' href="#contact"><span class="menu_homepage">CONTACT</span></a></li>
                            
                         </ul>
                     </div>
                 </div>
                 </div>
                    <img src="images/images1.png" class="center-block frst_page_logo">
-                   <!-- <video width="100%" height="auto" autoplay loop>
-  <source src="https://www.youtube.com/watch?v=J4rBDsimsmQ" type="video/mp4">
+
+
+
+
+
+                   
+                   <!-- <video width="100%" autoplay loop>
+  <source src="vido.mp4" type="video/mp4">
  
  
 </video> -->
-                 <!-- <div class="content">
-              <div id="player"></div>
-              </div> -->
-             
-                 <!--  <script type="text/javascript">
-                        var tag = document.createElement('script');
-tag.src = "http://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
 
-onYouTubeIframeAPIReady = function () {
-    player = new YT.Player('player', {
-        height: '570px',
-        width: '100%',
-        videoId: 'J4rBDsimsmQ',  
-        playerVars: {
-            'autoplay': 0,
-            'rel': 0,
-            'showinfo': 0,
-            'modestbranding': 1,
-            'autohide': 2,
-            'border':0,
-           
-            'enablejsapi':1,
-            'controls':2
 
-            
 
-        },
-        events: {
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
+<!-- <video autoplay loop poster="images/video.png"><source src="vido.mp4"></video> -->
+                
 
-onPlayerStateChange = function (event) {
-    if (event.data == YT.PlayerState.ENDED) {
-        $('.secnd_pag_utub').fadeIn('normal');
-    }
-}
-
-$(document).on('click', '.secnd_pag_utub', function () {
-    $(this).fadeOut('normal');
-    player.playVideo();
-});
-                    </script> -->
-                  
-
-            <!-- <img src="images/images2.png" class="center-block frst_page_play"> -->
+<!-- <img src="images/images2.png" class="center-block frst_page_play"> -->
 
 
         </div>
@@ -108,7 +77,7 @@ $(document).on('click', '.secnd_pag_utub', function () {
         <div class="col-md-1 col-sm-1"></div>
         <div class="col-md-2 col-sm-2 col-xs-12">
         <!-- <img src="images/images3.png" class="center-block"> -->
-          <a href="#"><img src="images/icons_1.png" onmouseover="this.src='images/icons_1_hover.png'" onmouseout="this.src='images/icons_1.png'" class="center-block" /></a>
+          <a href="#schools"><img src="images/icons_1.png" onmouseover="this.src='images/icons_1_hover.png'" onmouseout="this.src='images/icons_1.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class for Schools</p>
         <img src="images/images33.png" class="center-block images33_m">
 
@@ -116,7 +85,7 @@ $(document).on('click', '.secnd_pag_utub', function () {
          <div class="col-md-2 col-sm-2"></div>
           <div class="col-md-2 col-sm-2 col-xs-12 scnd_pag_img_ma">
         <!-- <img src="images/images4.png" class="center-block"> -->
-          <a href="#"><img src="images/icons_2.png" onmouseover="this.src='images/icons_2_hover.png'" onmouseout="this.src='images/icons_2.png'" class="center-block" /></a>
+          <a href="#tablet"><img src="images/icons_2.png" onmouseover="this.src='images/icons_2_hover.png'" onmouseout="this.src='images/icons_2.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class with Tablet</p>
         <img src="images/images33.png" class="center-block images33_m">
 
@@ -124,7 +93,7 @@ $(document).on('click', '.secnd_pag_utub', function () {
         <div class="col-md-1 col-sm-1"></div>
          <div class="col-md-3 col-sm-3 col-xs-12 scnd_pag_img_ma_1">
         <!-- <img src="images/images5.png" class="center-block"> -->
-          <a href="#"><img src="images/icons_3.png" onmouseover="this.src='images/icons_3_hover.png'" onmouseout="this.src='images/icons_3.png'" class="center-block" /></a>
+          <a href="#subscription"><img src="images/icons_3.png" onmouseover="this.src='images/icons_3_hover.png'" onmouseout="this.src='images/icons_3.png'" class="center-block" /></a>
         <p class="text-center second_page_head">My Class for personal subscriptions</p>
         <img src="images/images33.png" class="center-block images33_m">
 
@@ -146,24 +115,24 @@ $(document).on('click', '.secnd_pag_utub', function () {
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-1 col-sm-1"></div>
 <div class="col-md-10 col-sm-10 col-xs-12 second_page_box">
-<p class="text-center second_page_box_content_head"><span class="tblack">MY</span> Class content</p>
+<p class="text-center second_page_box_content_head wow fadeInUp "><span class="tblack">MY</span> Class content</p>
 
 
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-3 col-sm-3"></div>
 <div class="col-md-2 col-sm-2 col-xs-12">
-	<img src="images/images6.png" class="center-block">
-	<p class="text-center second_page_box_content_inner">Engaging video tutorials</p>
+	<img src="images/images6.png" class="center-block wow zoomIn">
+	<p class="text-center second_page_box_content_inner wow slideInUp">Engaging video tutorials</p>
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-	<img src="images/images7.png" class="center-block">
-	<p class="text-center second_page_box_content_inner">Animated videos</p>
+	<img src="images/images7.png" class="center-block wow zoomIn">
+	<p class="text-center second_page_box_content_inner wow slideInUp">Animated videos</p>
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-	<img src="images/images8.png" class="center-block">
-	<p class="text-center second_page_box_content_inner">Class wise & Topic
+	<img src="images/images8.png" class="center-block wow zoomIn">
+	<p class="text-center second_page_box_content_inner wow slideInUp">Class wise & Topic
 wise videos</p>
 </div>
 
@@ -178,32 +147,32 @@ wise videos</p>
 
 <div class="col-md-1 col-sm-1"></div>
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images9.png" class="center-block">
-<p class="text-center second_page_box_content_inner">CBSE</p>
+<img src="images/images9.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">CBSE</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images10.png" class="center-block">
-<p class="text-center second_page_box_content_inner">ICSE</p>
+<img src="images/images10.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">ICSE</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images11.png" class="center-block">
-<p class="text-center second_page_box_content_inner">BSE TELANGANA</p>
+<img src="images/images11.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">BSE TELANGANA</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images12.png" class="center-block">
-<p class="text-center second_page_box_content_inner">KSEEB</p>
+<img src="images/images12.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">KSEEB</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images13.png" class="center-block">
-<p class="text-center second_page_box_content_inner">BSE ANDHRA PRADESH</p>
+<img src="images/images13.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">BSE ANDHRA PRADESH</p>
 
 
 </div>
@@ -218,35 +187,35 @@ wise videos</p>
 
 <div class="col-md-1 col-sm-1"></div>
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images14.png" class="center-block">
-<p class="text-center second_page_box_content_inner">White board projector
+<img src="images/images14.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">White board projector
 screens</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images15.png" class="center-block">
-<p class="text-center second_page_box_content_inner">Wide range of 
+<img src="images/images15.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">Wide range of 
 projectors</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images16.png" class="center-block">
-<p class="text-center second_page_box_content_inner">Secured stand alone
+<img src="images/images16.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">Secured stand alone
 servers</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images17.png" class="center-block">
-<p class="text-center second_page_box_content_inner">Cloud based servers</p>
+<img src="images/images17.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">Cloud based servers</p>
 
 </div>
 
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images18.png" class="center-block">
-<p class="text-center second_page_box_content_inner">High performance 
+<img src="images/images18.png" class="center-block wow zoomIn">
+<p class="text-center second_page_box_content_inner wow slideInUp">High performance 
 tablets</p>
 
 
@@ -264,13 +233,13 @@ tablets</p>
 
 
 <!-- -------------------------third page--------------------------   -->
-<div class="container col-md-12 col-md-12 col-xs-12 third_page tregular">
+<div class="container col-md-12 col-md-12 col-xs-12 third_page tregular" id="schools">
 <div class="container col-md-12 col-md-12 col-xs-12">
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-8 col-sm-8 col-xs-12 third_page_head_pad">
-<img src="images/images19.png" class="center-block">
-<p class="text-center third_page_head"><span class="tblack">My</span> Class for schools</p>
-<p class="text-center third_page_inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+<img src="images/images19.png" class="center-block wow zoomIn">
+<p class="text-center third_page_head wow fadeInUp"><span class="tblack">My</span> Class for schools</p>
+<p class="text-center third_page_inner wow fadeInUp">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
 </div>
 <div class="col-md-2 col-sm-2"></div>
 </div>
@@ -279,8 +248,8 @@ tablets</p>
 
 <!-- --------------------------fourth page-------------------------- -->
 
-<div class="container col-md-12 col-md-12 col-xs-12 fourth_page tregular">
-<div class="container col-md-12 col-md-12 col-xs-12">
+<div class="container col-md-12 col-md-12 col-xs-12 fourth_page tregular" >
+<div class="container col-md-12 col-md-12 col-xs-12" >
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-8 col-sm8 col-xs-12">
 <p class="text-center fourth_page_box_content_inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
@@ -290,18 +259,18 @@ tablets</p>
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images20.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Engaging video tutorials</p>
+<img src="images/images20.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Engaging video tutorials</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images21.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Cloud server</p>
+<img src="images/images21.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Cloud server</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images22.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Automatically updated course content</p>
+<img src="images/images22.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Automatically updated course content</p>
 </div>
 
 <div class="col-md-2 col-sm-2"></div>
@@ -320,14 +289,14 @@ tablets</p>
 
 <!-- ------------------------fifth page------------------------------- -->
 
-<div class="container col-md-12 col-md-12 col-xs-12 fifth_page tregular">
+<div class="container col-md-12 col-md-12 col-xs-12 fifth_page tregular" id="tablet">
 <div class="container col-md-12 col-md-12 col-xs-12">
 
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-8 col-sm-8 col-xs-12 third_page_head_pad">
-<img src="images/images23.png" class="center-block">
-<p class="text-center third_page_head"><span class="tblack">My</span> Class with tablet</p>
-<p class="text-center third_page_inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+<img src="images/images23.png" class="center-block wow zoomIn">
+<p class="text-center third_page_head wow fadeInUp"><span class="tblack">My</span> Class with tablet</p>
+<p class="text-center third_page_inner wow fadeInUp">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
 </div>
 <div class="col-md-2 col-sm-2"></div>
 
@@ -348,18 +317,18 @@ tablets</p>
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-2 col-sm-2 col-xs-12">
-<img src="images/images24.png" class="center-block">
-<p class="text-center fourth_page_inner_img">High end tablets</p>
+<img src="images/images24.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">High end tablets</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images25.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Videos embedded in memory cards</p>
+<img src="images/images25.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Videos embedded in memory cards</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images26.png" class="center-block">
-<p class="text-center fourth_page_inner_img">inbuild <span class="tblack">MY</span>Class app</p>
+<img src="images/images26.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">inbuild <span class="tblack">MY</span>Class app</p>
 </div>
 
 <div class="col-md-2 col-sm-2"></div>
@@ -375,14 +344,14 @@ tablets</p>
 
 <!-- ----------------------seventh page--------------------------------- -->
 
-<div class="container col-md-12 col-md-12 col-xs-12 seventh_page tregular">
+<div class="container col-md-12 col-md-12 col-xs-12 seventh_page tregular" id="subscription">
 <div class="container col-md-12 col-md-12 col-xs-12">
 
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-8 col-sm-8 col-xs-12 third_page_head_pad">
-<img src="images/images27.png" class="center-block">
-<p class="text-center third_page_head"><span class="tblack">My</span> Class for individual subscription</p>
-<p class="text-center third_page_inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+<img src="images/images27.png" class="center-block wow zoomIn">
+<p class="text-center third_page_head wow fadeInUp"><span class="tblack">My</span> Class for individual subscription</p>
+<p class="text-center third_page_inner wow fadeInUp">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
 </div>
 <div class="col-md-2 col-sm-2"></div>
 
@@ -403,18 +372,18 @@ tablets</p>
 <div class="col-md-12 col-sm-12 col-xs-12">
 <div class="col-md-2 col-sm-2"></div>
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images28.png" class="center-block">
-<p class="text-center fourth_page_inner_img">High quality videos</p>
+<img src="images/images28.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">High quality videos</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images29.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Cloud based</p>
+<img src="images/images29.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Cloud based</p>
 </div>
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="images/images30.png" class="center-block">
-<p class="text-center fourth_page_inner_img">Desktop <span class="tblack">MY</span>Class app</p>
+<img src="images/images30.png" class="center-block wow zoomIn">
+<p class="text-center fourth_page_inner_img wow fadeInUp">Desktop <span class="tblack">MY</span>Class app</p>
 </div>
 
 <div class="col-md-2 col-sm-2"></div>
@@ -578,6 +547,10 @@ Garevebhavi Palya, Bangalore - 560068</p> -->
 
 </div>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script>
+            smoothScroll.init();
+</script>
 </body>
 
 </html>
