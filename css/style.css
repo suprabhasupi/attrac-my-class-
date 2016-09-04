@@ -30,11 +30,15 @@ video {
 
 
 .home_nav {
-    position: absolute;
+         background: rgba(37, 36, 36, 0.41);
+    z-index: 1000;
+    padding: 1.8em;
 }
 
 .first_page {
-    background: black;
+    background-image: url(../images/4.jpg);
+      background-position: center;
+    background-size: cover;
     max-height: 527px;
     min-height: 527px;
     font-size: 14px;
