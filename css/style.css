@@ -27,12 +27,16 @@ video {
     z-index: -100;
     opacity: .9;
 }*/
-
+.googlewiki_logo{
+    position: absolute;
+    top: 0px;
+    left: 26px;
+}
 
 .home_nav {
          background: rgba(37, 36, 36, 0.41);
     z-index: 1000;
-    padding: 1.8em;
+    padding: 1em;
 }
 
 .first_page {
@@ -174,15 +178,6 @@ p.fourth_page_inner_img {
 /*--------------------------fifth page----------------------------*/
 
 
-/*
-.fifth_page{
-	background-image: url(../images/2.jpg);
-	min-height: 528px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 4em;
-}*/
-
 .fifth_page {
     background: url(../images/2.jpg) no-repeat fixed;
     min-height: 551px;
@@ -194,15 +189,6 @@ p.fourth_page_inner_img {
 
 
 /*-------------------------seventh page--------------------*/
-
-
-/*.seventh_page{
-	background-image: url(../images/3.jpg);
-	min-height: 528px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 4em;
-}*/
 
 .seventh_page {
     background: url(../images/3.jpg) no-repeat fixed;
