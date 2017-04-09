@@ -28,16 +28,17 @@ video {
     opacity: .9;
 }*/
 .googlewiki_logo{
-    position: absolute;
-    top: 0px;
-    left: 26px;
+    
+}
+.navbar-nav{
+    float:right;
+}
+.home_nav {
+    background: rgba(37, 36, 36, 0.41);
+    z-index: 1000;
+    padding-top: 10px;
 }
 
-.home_nav {
-         background: rgba(37, 36, 36, 0.41);
-    z-index: 1000;
-    padding: 1em;
-}
 
 .first_page {
     background-image: url(../images/4.jpg);
@@ -409,4 +410,13 @@ input[type="checkbox"]:checked + label span {
         font-size: 18px;
         padding-top: 11px;
     }
+}
+
+@media only screen and (max-width: 450px) {
+
+.navbar-header{
+        position: absolute;
+    right: 0;
+    top: -5.5em;
+}
 }
